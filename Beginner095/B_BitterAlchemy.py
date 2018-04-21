@@ -1,7 +1,6 @@
 import math
 
-N = int(input())
-X = int(input())
+N, X = map(int, input().split())
 m = {}
 num = 0
 
