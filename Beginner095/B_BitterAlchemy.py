@@ -1,5 +1,16 @@
+import math
+
 N = int(input())
 X = int(input())
 m = {}
+num = 0
+
+
 for i in range(N):
-  m[i] = input()
+  m[i] = int(input())
+  X = X - m[i]
+  num += 1
+  print(num)
+  print(X)
+
+print(math.floor(X / min(m[i] for i in m) + num))
